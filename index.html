@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="style.css"/>
+    <script src="./src.js"></script>
+    <title>Unit Converter</title>
+    <h2>Choose an option in the drop down menu to begin</h2>
+</head>
+<body>
+<!--- first selection drop down menu
+    <label>What typ of conversion would you like to do?  
+    <select name="options">
+        <option value="Pressure">Pressure</option>
+        <option value="Weight">Weight</option>
+        <option value="Volume">Volume</option>
+        <option value="Temperature">Temperature</option>
+    </select>
+    <br> <br>  --->
+
+    <button onclick="myFunction1()">Pressure</button>
+    <div id="section1">
+        <!--- pressure drop down menu--->
+        <section1>
+            <label>Convert from:
+            <br>
+            <input type="number">
+            <select name="pressureOptions">
+                <option value="bar">bar</option>
+                <option value="atm">atm</option>
+                <option value="pascal">pascal</option>
+            </select>
+            <br><br>
+            <label>Convert to:
+            <br>
+            <input type="number">
+            <select name="pressureOptions">
+                <option value="bar">bar</option>
+                <option value="atm">atm</option>
+                <option value="pascal">pascal</option>
+            </select>
+        </section1>
+    </div>
+
+    <button onclick="myFunction2()">Weight</button>
+    <div id="section2">
+        <!--- weight drop down menu--->
+        <section2>
+            <label>Convert from:
+            <br>
+            <input type="number">
+            <select name="pressureOptions">
+                <option value="kg">kg</option>
+                <option value="lbs">lbs</option>
+                <option value="stone">stone</option>
+            </select>
+            <br><br>
+            <label>Convert to:
+            <br>
+            <input type="number">
+            <select name="pressureOptions">
+                <option value="kg">kg</option>
+                <option value="lbs">lbs</option>
+                <option value="stone">stone</option>
+            </select>
+        </section2>
+    </div>
+
+    <button onclick="myFunction3()">Volume</button>
+    <div id="section3">
+    <!--- volume drop down menu--->
+        <section3>
+            <label>Convert from:
+            <br>
+            <input type="number">
+            <select name="pressureOptions">
+                <option value="litre">litre</option>
+                <option value="m^3">m^3</option>
+                <option value="barrels">barrels</option>
+            </select>
+            <br><br>
+            <label>Convert to:
+            <br>
+            <input type="number">
+            <select name="pressureOptions">
+                <option value="litre">litre</option>
+                <option value="m^3">m^3</option>
+                <option value="barrels">barrels</option>
+            </select>
+        </section3>
+    </div>
+
+    <button onclick="myFunction4()">Temperature</button>
+    <div id="section4">
+        <!--- temperature drop down menu--->
+        <section4>
+            <label>Convert from:
+            <br>
+            <input type="number">
+            <select name="pressureOptions">
+                <option value="kelvin">kelvin</option>
+                <option value="fahrenheit">fahrenheit</option>
+                <option value="celsius">celsius</option>
+            </select>
+            <br><br>
+            <label>Convert to:
+            <br>
+            <input type="number">
+            <select name="pressureOptions">
+                <option value="kelvin">kelvin</option>
+                <option value="fahrenheit">fahrenheit</option>
+                <option value="celsius">celsius</option>
+            </select>
+        </section4>
+    </div>
+
+<script>
+    function myFunction1() {
+    var x = document.getElementById("section1");
+    myFunction1 = (x.style.display === "none")
+    if (x.style.display === "none") {
+      x.style.display = "block";
+    } else {
+      x.style.display = "none";
+    }
+  }
+</script>
+
+<!---    <label for="option1">What are you looking to convert from?:</label>
+    <select name="option1" id="option1" required>
+        <optgroup label="Pressure">
+          <option value="atm">atm</option>
+          <option value="bar">bar</option>
+        </optgroup>
+        <optgroup label="Weight">
+            <option value="lbs">lbs</option>
+            <option value="kg">kg</option>
+        </optgroup>
+        </optgroup>
+        <optgroup label="Volume">
+            <option value="barrels">barrels</option>
+            <option value="cm^3">cm^3</option>
+        </optgroup>
+        <optgroup label="Temperature">
+            <option value="Kelvin">Kelvin</option>
+            <option value="Fahrenheit">Fahrenheit</option>
+        </optgroup>
+    </select>
+
+    <br>
+    <br>
+
+    <label for="option2">What are you looking to convert to?:</label>
+    <select name="option2" id="option2" required>
+        <optgroup label="Pressure">
+          <option value="atm">atm</option>
+          <option value="bar">bar</option>
+        </optgroup>
+        <optgroup label="Weight">
+            <option value="lbs">lbs</option>
+            <option value="kg">kg</option>
+        </optgroup>
+        </optgroup>
+        <optgroup label="Volume">
+            <option value="m^3">m^3</option>
+            <option value="cm^3">cm^3</option>
+        </optgroup>
+        <optgroup label="Temperature">
+            <option value="Kelvin">Kelvin</option>
+            <option value="Celsius">Celsius</option>
+        </optgroup>
+    </select> --->
+
+
+</body>
+</html>
